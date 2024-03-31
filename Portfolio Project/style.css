@@ -439,12 +439,68 @@ section {
   width: 85%;
 }
 
+/* Project section design */
+
+.project {
+  background-color: var(--second-bg-color);
+}
+
+.project-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(500px, 1fr)
+  ); /* Adjust the column width as needed */
+  grid-gap: 10px; /* Adjust the gap between images */
+}
+
+/* Style for the images */
+.img {
+  position: relative;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.project_btn {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(19, 6, 6, 0.8); /* Background with 80% opacity */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 15rem;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-family: var(--second-font);
+}
+.project_btn a{
+  color: var(--text-color);
+}
+
+.project_btn:hover {
+  background: var(--main-color);
+}
+
+.img:hover img {
+  opacity: 0.7;
+}
 /* Contact section design */
 
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 .contact form {
   max-width: 70rem;
@@ -477,7 +533,7 @@ section {
 .contact form .textarea-field textarea::placeholder {
   color: var(--text-color);
 }
-.contact form .focus {
+.contact form.focus {
   position: absolute;
   top: 0;
   left: 0;
@@ -514,7 +570,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background: var(--second-bg-color);
 }
 .footer-text {
   font-size: 1.6rem;
@@ -559,5 +615,5 @@ footer {
 
 /* this CSS code for Javascript */
 .header.sticky {
-  background:var(--bg-color);
+  background: var(--bg-color);
 }
