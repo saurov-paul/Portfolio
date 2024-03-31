@@ -483,17 +483,23 @@ section {
   font-weight: 600;
   letter-spacing: 0.1rem;
   font-family: var(--second-font);
+  opacity: 0.9;
 }
 .project_btn a{
   color: var(--text-color);
 }
+.project_btn a:hover{
+  color: var(--second-bg-color);
+}
+
 
 .project_btn:hover {
   background: var(--main-color);
+  color: #112e42;
 }
 
 .img:hover img {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 /* Contact section design */
 
