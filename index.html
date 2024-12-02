@@ -24,156 +24,245 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Add this to the head section for Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Add this just before the closing body tag for Bootstrap JS and its dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!--Box Icons-->
   </head>
   <body>
     <!---header design-->
     <header class="header">
-      <a href="#"><img src="img/logo.png" alt="Logo" /></a>
-
-      <div id="menu-icon"><i class="bx bx-menu"></i></div>
-
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skill</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
+    
     <!--home secton design-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm <span>Saurov Paul</span></h1>
-        <div class="text-animate">
-          <h3>Full Stack Developer</h3>
+    <section class="home text-light py-5" id="home">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <!-- Content Section -->
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="home-content">
+              <h1 class="display-4">Hi, I'm <span class="text-info">Saurov Paul</span></h1>
+              <div class="text-animate">
+                <h3 class="fw-light text-info">Full Stack Developer</h3>
+              </div>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                aliquam veniam! Voluptatum magnam ab iste porro sequi fugit enim
+                quis ea itaque, delectus alias, ut tempore ducimus rerum voluptate
+                atque?
+              </p>
+              <div class="btn-box mt-3">
+                <a href="#contact" class="btn btn-info me-2">Hire Me</a>
+                <a href="#contact" class="btn btn-outline-light">Let's Talk</a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="col-lg-5 text-center">
+            <div class="home-imgHover mb-3">
+              <img src="img/homeimg.png" alt="Your Image" class="img-fluid rounded-circle shadow">
+            </div>
+          </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquam
-          veniam! Voluptatum magnam ab iste porro sequi fugit enim quis ea
-          itaque, delectus alias, ut tempore ducimus rerum voluptate atque?
-        </p>
-        <div class="btn-box">
-          <a href="#" class="btn">Hire Me</a>
-          <a href="#" class="btn">Let's Talk</a>
+        <!-- Social Media Section -->
+        <div class="social-section">
+          <a href="#" class="text-light fs-3 mb-3"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="text-light fs-3 mb-3"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="text-light fs-3 mb-3"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="text-light fs-3"><i class="bx bxl-github"></i></a>
         </div>
       </div>
-
-      <div class="social-section">
-        <a href="#"><i class="bx bxl-facebook"></i></a>
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-instagram"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
-      </div>
-      <div class="home-imgHover"></div>
     </section>
 
     <!-- about section design-->
 
-    <section class="about" id="about">
-      <h2 class="heading">About <span>Me</span></h2>
-      <div class="about-img">
-        <img src="img/homeimg.png" alt="About Me img" />
-        <span class="circle-spin"></span>
-      </div>
-      <div class="about-content">
-        <h3>Full Stack Developer!</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-          reprehenderit maxime modi magnam laborum alias animi sequi harum sed
-          odit impedit quaerat laudantium repellat ea aspernatur nulla, quo ad
-          autem non ut? Laboriosam aperiam maxime aliquam, doloremque vel
-          incidunt distinctio consequatur modi neque perspiciatis. Temporibus
-          necessitatibus optio eligendi veniam? Exercitationem?
-        </p>
-        <div class="btn-box btns">
-          <a href="aboutme.html" class="btn">Read More</a>
+    <section class="about py-5 bg-second-bg-color text-light" id="about">
+      <div class="container">
+        <h2 class="text-center mb-5 heading">About <span class="text-info">Me</span></h2>
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-lg-5 text-center position-relative">
+            <div class="about-img">
+              <img src="img/homeimg.png" alt="About Me" class="img-fluid rounded-circle shadow" />
+              <span class="circle-spin position-absolute"></span>
+            </div>
+          </div>
+          <!-- Content Section -->
+          <div class="col-lg-7">
+            <div class="about-content">
+              <h3 class="text-info">Full Stack Developer!</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+                reprehenderit maxime modi magnam laborum alias animi sequi harum sed
+                odit impedit quaerat laudantium repellat ea aspernatur nulla, quo ad
+                autem non ut? Laboriosam aperiam maxime aliquam, doloremque vel
+                incidunt distinctio consequatur modi neque perspiciatis. Temporibus
+                necessitatibus optio eligendi veniam? Exercitationem?
+              </p>
+              <div class="btn-box mt-4">
+                <a href="aboutme.html" class="btn btn-info text-light px-4 py-2">Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Skills section design -->
 
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-
-      <div class="skills-row">
-        <div class="skills-colum">
-          <h3 class="title">Coding Skills</h3>
-          <div class="skills-box">
-            <div class="skills-content">
+    <section class="skills py-5" id="skills">
+      <div class="container">
+        <h2 class="text-center mb-5 heading text-light">
+          My <span class="text-info">Skills</span>
+        </h2>
+        <div class="row">
+          <!-- Coding Skills -->
+          <div class="col-lg-6 mb-4">
+            <h3 class="title text-info">Coding Skills</h3>
+            <div class="skills-box">
               <div class="progress">
-                <h3>HTML <span>90%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>HTML</h4>
+                <span>90%</span>
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>CSS <span>80%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>CSS</h4>
+                <span>80%</span>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>JavaScript <span>65%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>JavaScript</h4>
+                <span>65%</span>
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>PHP <span>50%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>PHP</h4>
+                <span>50%</span>
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="skills-colum">
-          <h3 class="title">Professional Skills</h3>
-          <div class="skills-box">
-            <div class="skills-content">
+    
+          <!-- Professional Skills -->
+          <div class="col-lg-6 mb-4">
+            <h3 class="title text-info">Professional Skills</h3>
+            <div class="skills-box">
               <div class="progress">
-                <h3>Web Development <span>80%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>Web Development</h4>
+                <span>80%</span>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>Graphics Design <span>55%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>Graphics Design</h4>
+                <span>55%</span>
+                <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>Online Ecommerce <span>90%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>Online Ecommerce</h4>
+                <span>90%</span>
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-
+    
               <div class="progress">
-                <h3>Social Media Marketing <span>85%</span></h3>
-                <div class="bar"><span></span></div>
+                <h4>Social Media Marketing</h4>
+                <span>85%</span>
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    
+    
 
     <!-- Project section design -->
 
     <section class="project" id="project">
-      <h2 class="heading">My <span>Project</span></h2>
-      <div class="project-container">
-        <div class="project-container">
-          <div class="img"><img src="img/project-1.jpg" alt="Project 1"><button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Bubble%20Game">See Project</a></button></div>
-          <div class="img"><img src="img/project-2.jpg" alt="Project 2"><button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Car%20Search">See Project</a></button></div>
-          <div class="img"><img src="img/project-3.jpg" alt="Project 3"><button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/PanCake">See Project</a></button></div>
-          <div class="img"><img src="img/project-4.jpg" alt="Project 4"><button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Pokemon">See Project</a></button></div>
-          <div class="img"><img src="img/project-5.jpg" alt="Project 5"><button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Mouse%20Move">See Project</a></button></div>
-          <div class="img"><img src="img/project-6.jpg" alt="Project 6"><button class="project_btn"><a href="">See Project</a></button></div>
+      <h2 class="heading">My <span>Projects</span></h2>
+      <div class="project-container row">
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-1.jpg" alt="Project 1">
+            <button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Bubble%20Game" target="_blank">See Project</a></button>
+          </div>
         </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-2.jpg" alt="Project 2">
+            <button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Car%20Search" target="_blank">See Project</a></button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-3.jpg" alt="Project 3">
+            <button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/PanCake" target="_blank">See Project</a></button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-4.jpg" alt="Project 4">
+            <button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Pokemon" target="_blank">See Project</a></button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-5.jpg" alt="Project 5">
+            <button class="project_btn"><a href="https://githubbox.com/saurov-paul/My_Projects/tree/main/Mouse%20Move" target="_blank">See Project</a></button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="img">
+            <img src="img/project-6.jpg" alt="Project 6">
+            <button class="project_btn"><a href="#" target="_blank">See Project</a></button>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
     <!-- Contact section design -->
 
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
-
+    
       <form action="#">
         <div class="input-box">
           <div class="input-field">
@@ -181,14 +270,14 @@
             <span class="focus"></span>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Email Address" required />
+            <input type="email" placeholder="Email Address" required />
             <span class="focus"></span>
           </div>
         </div>
-
+    
         <div class="input-box">
           <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
+            <input type="tel" placeholder="Mobile Number" required />
             <span class="focus"></span>
           </div>
           <div class="input-field">
@@ -196,33 +285,44 @@
             <span class="focus"></span>
           </div>
         </div>
+    
         <div class="textarea-field">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Mesage"
-            required
-          ></textarea>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
           <span class="focus"></span>
         </div>
+    
         <div class="btn-box btns">
           <button type="submit" class="btn">Submit</button>
         </div>
       </form>
     </section>
+    
 
     <!-- Footer section Design -->
 
     <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; 2024 by Paul | All Right Reserved.</p>
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>Follow Us</h3>
+          <div class="footer-social">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+    
+        <div class="footer-right">
+          <p>&copy; 2024 by Paul | All Rights Reserved.</p>
+        </div>
       </div>
+    
       <div class="footer-iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
+    
+    
 
     <script src="main.js"></script>
   </body>
